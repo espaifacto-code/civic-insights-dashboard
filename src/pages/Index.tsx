@@ -13,6 +13,7 @@ import {
 } from 'lucide-react';
 import { format } from 'date-fns';
 import { mostCommon } from '@/hooks/useDashboardData';
+import WebhookChat from "@/components/chat/WebhookChat";
 
 const Index = () => {
   const { interactions, reports, filters, setFilters, filterOptions, isLoading, error } = useDashboardData();
@@ -134,5 +135,6 @@ const Index = () => {
     </div>
   );
 };
-
+<WebhookChat />
 export default Index;
+

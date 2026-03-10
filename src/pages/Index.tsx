@@ -131,10 +131,11 @@ const Index = () => {
         <TabsContent value="alerts" className="space-y-6">
           <AlertsPanel interactions={interactions} />
         </TabsContent>
+        <WebhookChat />
       </Tabs>
     </div>
   );
 };
-<WebhookChat />
+
 export default Index;
 

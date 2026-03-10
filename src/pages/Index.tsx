@@ -130,8 +130,9 @@ const Index = () => {
         {/* Section 3: Alerts */}
         <TabsContent value="alerts" className="space-y-6">
           <AlertsPanel interactions={interactions} />
+          <WebhookChat />
         </TabsContent>
-        <WebhookChat />
+        
       </Tabs>
     </div>
   );

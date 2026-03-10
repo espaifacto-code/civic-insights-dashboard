@@ -11,6 +11,7 @@ const WEBHOOK_URL = import.meta.env.VITE_CHAT_WEBHOOK_URL as string | undefined;
 function extractReply(data: any): string {
   if (!data) return "El webhook respondió vacío.";
   if (typeof data === "string") return data;
+  if (typeof data.response === "string") return data.response;   // ← añadir esto
   if (typeof data.reply === "string") return data.reply;
   if (typeof data.message === "string") return data.message;
   if (typeof data.output === "string") return data.output;
